@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte Size Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <h1>Byte Size Calculator</h1>
+        <p>Enter a string to calculate its size in bytes:</p>
+        <textarea id="inputString" placeholder="Type your string here..."></textarea>
+        <button id="calculateButton">Calculate</button>
+        <div class="output">
+            <p>Byte Size: <span id="byteSizeOutput">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>

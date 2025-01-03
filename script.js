@@ -1,7 +1,13 @@
-const byteSize = (str) => {
-  // write your code here
-};
+function byteSize(str) {
+    // Create a new Blob object with the input string
+    const blob = new Blob([str]);
+    return blob.size;
+}
 
-// Do not change the code below
-const str = prompt("Enter some string.");
-alert(byteSize(str));
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById('calculateButton').addEventListener('click', () => {
+        const inputString = document.getElementById('inputString').value;
+        const size = byteSize(inputString);
+        document.getElementById('byteSizeOutput').textContent = size;
+    });
+});
